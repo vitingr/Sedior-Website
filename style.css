@@ -1,0 +1,604 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 19.5px;
+    color: #1c2a38;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+main {
+    padding-bottom: 150px;
+}
+
+body {
+    background-color: #efeff0;
+}
+
+.principal {
+    background: white;
+    width: 750px;
+    margin: auto;
+}
+
+.principal-cima {
+    margin-top: -300px;
+}
+
+.principal-plantel {
+    border-radius: 15px;
+    padding: 50px;
+    background: white;
+    width: 1050px;
+    min-height: 500px;
+    margin: auto;
+}
+
+.section-inicial {
+    width: 1050px;
+    margin: auto;
+}
+
+/* CONFIG SECTIONS */
+
+.lineup {
+    margin-top: 50px;
+}
+
+/* ULTIMOS JOGOS */
+
+#espaco-baixo {
+    margin-bottom: 50px;
+}
+
+#espaco-baixo1 {
+    margin-top: 35px;
+}
+
+.jogo {
+    box-shadow: 0 118px 76px rgba(15,28,54,0.17),0 49.2976px 31.751px rgba(15,28,54,0.122205),0 26.3568px 16.9756px rgba(15,28,54,0.101338),0 14.7754px 9.51638px rgba(15,28,54,0.085),0 7.84712px 5.05408px rgba(15,28,54,0.0686618),0 3.26536px 2.10311px rgba(15,28,54,0.0477948);
+    background: white;
+    border: 1px solid #71717157;
+    border-radius: 10.5px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+}
+
+.info-jogo {
+    border-top: 0.5px solid #71717185;
+    padding-top: 25px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.title {
+    font-size: 17.5px;
+    text-align: center;
+    font-weight: bold;
+    color: #1c2a38;
+}
+
+.team-logo {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.team {
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.placar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ganhador {
+    color: #623ce6;
+}
+
+.meio {
+    color: #1c2a38;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.gol {
+    color: #1c2a38;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nome-time {
+    width: 150px;
+    text-align: center;
+    color: #1c2a38;
+}
+
+.data {
+    font-size: 18.25px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #8A8F98;
+}
+
+.arbitro {
+    font-size: 18.25px;
+    margin-top: 15px;
+    text-align: center;
+    color: #8A8F98;
+}
+
+.encerrado {
+    margin-top: 7.5px;
+    text-align: center;
+    font-size: 17.5px;
+    color: #6d1f31;
+}
+
+.icone-pequeno {
+    width: 17.5px;
+    height: 17.5px;
+}
+
+.jogos-bg {
+    padding: 75px;
+    animation: gradiente 2.75s ease-in-out alternate infinite;
+    background: linear-gradient(148deg,#fff 15%, rgb(240, 240, 240), #dddddd, #c0c0c0); 
+    background-size: 300% 300%;
+}
+
+mark {
+    font-size: 18.25px;
+    background: none;
+    color:#1c2a38;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.logo {
+    font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
+    animation: gradiente 2.75s ease-in-out alternate infinite;
+    background: linear-gradient(270deg, #ff1f48, #771d32, #4d0818);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    animation: gradiente 7.5s ease-in-out alternate infinite;
+    background: linear-gradient(270deg, #0D0D0D, #262626, #404040);
+    background-size: 300% 300%;
+    background: #262626;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}   
+
+.nav-list li {
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    margin-left: 32px;
+    color: white;
+    padding-bottom: 0.5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-list li:hover {
+    border-bottom: 0.5px solid white;
+}
+
+/* CONFIGURAÇÕES DE TEXTOS */
+
+.posicoes {
+    color: #1c2a38;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 75px;
+    margin-left: 25px;
+    margin-bottom: 35px;
+}
+
+.titulo {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 27.5px;
+    color: #d2003c;
+}
+
+/* ESCALAÇÃO */
+
+.grid {
+    margin-top: 50px;
+}
+
+.grid > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nome {
+    background: rgba(255, 255, 255, 0.63);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    padding: 10px;
+    width: 450px;
+    margin-top: 12.5px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.nome:hover {
+    cursor: pointer;
+    background: rgba(189, 189, 189, 0.507);
+}
+
+.numero {
+    margin-top: 12px;
+    margin-left: -150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 22.5px;
+    border-radius: 50%;
+    padding: 7.5px;
+    color: white;
+    background: #4d0818;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.numero:hover {
+    cursor: pointer;
+    background: #771d32;
+}
+
+/* PLANTEL DETALHADO */
+
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(70.62deg,#af0832bd 14.78%,#db0a42be 71.74%),
+    url(https://www.redbullsalzburg.at/akimages/rbsprod/getmedia/11260298-c7a6-472e-960a-54568d433bc2/_AS10548.jpg.webp?impolicy=crop&width=4406&height=1542&x=0&y=2993&imwidth=1440);
+}
+
+.grid-plantel {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+
+.div-plantel {
+    max-width: 168px;
+    background: #d2003c;
+    cursor: pointer;
+    padding: 25px;
+    box-shadow: 0 118px 76px rgba(15,28,54,0.17),0 49.2976px 31.751px rgba(15,28,54,0.122205),0 26.3568px 16.9756px rgba(15,28,54,0.101338),0 14.7754px 9.51638px rgba(15,28,54,0.085),0 7.84712px 5.05408px rgba(15,28,54,0.0686618),0 3.26536px 2.10311px rgba(15,28,54,0.0477948);
+    border-radius: 15px;
+    min-height: 300px;
+    margin-bottom: 50px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+}
+
+.div-plantel:hover {
+    box-shadow: none;
+    background: #c20939;
+}
+
+.cargo {
+    color: #1c2a38;
+    width: 120px; /* QUEBRA DE LINHA MEXER AQUI*/
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nome-cargo {
+    width: 120px; /* QUEBRA DE LINHA MEXER AQUI*/
+    height: 65px;
+    margin-bottom: 65px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.nome-plantel {
+    width: 135px; /* QUEBRA DE LINHA MEXER AQUI, 120 QUEBRA*/
+    height: 35px;
+    margin-bottom: 85px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.numero-plantel {
+    width: 20px;
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.foto {
+    margin-left: 0px;
+    height: 150px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.squad {
+    margin-bottom: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* INFORMAÇÕES */
+
+#espacos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.info-footer {
+    display: flex;
+    margin: auto;
+    width: 1500px;
+}
+
+.img-quadra {
+    height: 738px;
+    width: 734px;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px -40px rgba(0,0,0,0.25);
+}
+
+.contatos {
+    margin-left: 50px;
+    display: block;
+}
+
+.contato {
+    width: 750px;
+    margin-bottom: 50px;
+    padding: 15px;
+    box-shadow: 0 30px 60px -40px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    background: white;
+}
+
+.nome-contato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.informacoes-contato p {
+    font-size: 18.5px;
+    margin-bottom: 7.5px;
+}
+
+.sedior {
+    margin-left: 15px;
+    font-size: 25px;
+    color: #d2003c;
+    font-weight: bold;
+}
+
+.fc {
+    font-size: 25px;
+    background: none;
+    color: #1c2a38;
+    font-weight: bold;
+}
+
+ion-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+#red {
+    color: #db0a40;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+#red:hover {
+    color: #64081d;
+}
+
+.iframe {
+    width: 780px;
+    border-radius: 15px;
+    height: 412px;
+}
+
+/* CONFIG IMAGENS */
+
+.mini-logo {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+/* BOTÃO */
+
+.align-botao {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.808);
+    color: #d2003c;
+    font-family: inherit;
+    display: inline-block;
+    width: 175px;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 75px;
+    margin-bottom: 35px;
+    border: 0.5px solid #d2003c;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #d2003c;
+}
+   
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #d2003c;
+    height: 150px;
+    width: 250px;
+    border-radius: 50%;
+}
+   
+button:hover {
+    color: #fff;
+}
+   
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+   
+button:active:before {
+    background: #d2003c;
+    transition: background 0s;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes gradiente {
+    from {
+        background-position: 0 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 560px) {
+    .nav {
+        width: 565px;
+    }
+    .grid-plantel {
+        width: 500px;
+        margin-left: -32.5px;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .div-plantel {
+        max-width: 168px;
+        background: #d2003c;
+        cursor: pointer;
+        padding: 25px;
+        box-shadow: 0 118px 76px rgba(15,28,54,0.17),0 49.2976px 31.751px rgba(15,28,54,0.122205),0 26.3568px 16.9756px rgba(15,28,54,0.101338),0 14.7754px 9.51638px rgba(15,28,54,0.085),0 7.84712px 5.05408px rgba(15,28,54,0.0686618),0 3.26536px 2.10311px rgba(15,28,54,0.0477948);
+        border-radius: 15px;
+        min-height: 300px;
+        margin-bottom: 50px;
+    }
+    .posicoes {
+        margin-left: -32.5px;
+    }
+    .principal-plantel {
+        margin-left: 0px;
+        width: 465px;
+    }
+    .background {
+        width: 565px;
+    }
+    .jogos-bg {
+        width: 415px;
+    }
+    .jogo {
+        width: 425px;
+        margin-left: -32.5px;
+    }
+    .info-footer {
+        display: inline;
+        margin: auto;
+        width: 450px;
+    }
+    .img-quadra {
+        width: 565px;
+    }
+    .contatos {
+        margin-left: 15px;
+        display: block;
+    }
+    .contato {
+        margin-top: 25px;
+        width: 400px;
+    }
+    .iframe {
+        width: 425px;
+        height: 412px;
+    }
+    .section-inicial {
+        width: 550px;
+    }
+    .squad {
+        width: 350px;
+        margin-left: 100px;
+    }
+}
