@@ -455,6 +455,10 @@ ion-icon {
     height: 412px;
 }
 
+.maps {
+    color: black;
+}
+
 /* CONFIG IMAGENS */
 
 .mini-logo {
@@ -581,14 +585,21 @@ button:active:before {
     }
     .img-quadra {
         width: 565px;
+        margin-bottom: 35px;
     }
     .contatos {
         margin-left: 15px;
         display: block;
     }
     .contato {
-        margin-top: 25px;
+        margin: auto;
         width: 400px;
+    }
+    .maps {
+        margin-top: 35px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
     .iframe {
         width: 425px;
