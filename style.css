@@ -287,13 +287,17 @@ mark {
 /* PLANTEL DETALHADO */
 
 .background {
+    margin: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 3000px;
     height: 650px;
-    background-image: linear-gradient(70.62deg,#af0832bd 14.78%,#db0a42be 71.74%),
-    url(https://www.redbullsalzburg.at/akimages/rbsprod/getmedia/11260298-c7a6-472e-960a-54568d433bc2/_AS10548.jpg.webp?impolicy=crop&width=4406&height=1542&x=0&y=2993&imwidth=1440);
+    background: url(2_20220831_214451_0001.png);
+    /*
+    background-image: linear-gradient(70.62deg, #af0832bd 14.78%, #db0a42be 71.74%),
+        url(2_20220831_214451_0001.png); */
+    /* https://www.redbullsalzburg.at/akimages/rbsprod/getmedia/11260298-c7a6-472e-960a-54568d433bc2/_AS10548.jpg.webp?impolicy=crop&width=4406&height=1542&x=0&y=2993&imwidth=1440 */
 }
 
 .grid-plantel {
